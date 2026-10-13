@@ -2,17 +2,9 @@
 let paragrafi = document.querySelectorAll("p");
 
 // Seleziono i 3 bottoni 
-let btnColore = document.getElementById("btnColore");
-let btnGrassetto = document.getElementById("btnGrassetto");
-let btnToggle = document.getElementById("btnToggle");
-
-// Funzione per generare un colore RGB casuale
-function coloreCasuale() {
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
-    return "rgb(" + r + ", " + g + ", " + b + ")"
-}
+let btnColore = document.querySelector("#btnColore");
+let btnGrassetto = document.querySelector("#btnGrassetto");
+let btnToggle = document.querySelector("#btnToggle");
 
 // BOTTONE 1: cambia colore (ogni paragrafo un colore diverso)
 btnColore.addEventListener("click", function() {
